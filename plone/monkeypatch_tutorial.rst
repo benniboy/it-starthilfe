@@ -1,0 +1,36 @@
+monkeypatch
+===========
+
+- in der ebene wo man die patches.py anlegt muss man diese auch
+  in der ``__init__.py`` deklarieren:
+
+- ``import patches``
+
+
+- ansonsten ist nichts mehr zu machen außer die funktion/methode in die patches.py
+  zu kopieren. die entsprechende klasse muss ebenfalls importiert werden und
+  die neue monkeypatch funktion solle mit _patched_ beginnen.
+
+- nach dem ändern des codes überschreibt mann quasi noch die funktion aus dem modul
+  mit der monkeypatch-funktion.
+  e voila fertig =)
+
+::
+    from plone.folder.default import DefaultOrdering
+    
+    def _patched_notifyRemoved(self, id):
+        """ see interfaces.py """
+    
+        order = self._order()
+        pos = self._pos()
+        idx = pos[id]
+        try:
+            del order[idx]
+        except:
+            logging.warn("index stored in pos is not valid.")
+        # we now need to rebuild pos since the ids have shifted
+        pos.clear()
+        for n, id in enumerate(order):
+            pos[id] = n 
+    
+    DefaultOrdering.notifyRemoved = _patched_notifyRemoved

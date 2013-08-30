@@ -1,0 +1,4 @@
+unpicked versions des projektes rausfinden
+==========================================
+
+- ``bin/buildout -c live.cfg -Nvvvvv |sed -ne 's/^Picked: //p' | sort | uniq``

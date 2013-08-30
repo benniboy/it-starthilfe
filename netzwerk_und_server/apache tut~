@@ -1,0 +1,9 @@
+apache tut
+
+mit sudo apache2.ctl start in apache startn 
+
+mit ps auxwww |egrep suchname kann men gechillt sachen suachn
+
+in /var/www kann i sachen einilegn über de i dann mit was andrem. zb handy, wenn i mitn kup intranet verbundn bin über mei ip adresse (ifconfig auslesn) und /dateiname.endung aufs file zuagreifn kann
+
+mit sudo apache2.ctl stop kann i ihn wieder stoppn (komische fehler oamfach ignoriern

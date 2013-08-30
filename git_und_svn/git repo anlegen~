@@ -1,0 +1,32 @@
+via console:
+
+local in ordner des projektes gehn
+
+dann: git init 
+
+evtl: git.ignore um gewisse sachen auszulassen bsp:
+
+*.pyc
+/bin
+/devsrc/
+/parts/
+/var/
+/src/
+*.egg-info/
+.mrsd
+/eggs/
+/develop-eggs/
+.*.cfg
+/coverage/
+/.project
+/.pydevproject
+/.settings/
+
+
+dann: git remote add github git@github.com:kontoname/repositoryname.git
+
+
+
+
+wenn was von git: in mein workspace dann git clone und gitadresseprojekt (am besten
+ssh adresse)

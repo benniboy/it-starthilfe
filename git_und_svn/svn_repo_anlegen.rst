@@ -1,0 +1,31 @@
+- ``svn mkdir https://serveradresse/projektname``
+
+- local in den workspace gehen
+  dann ``svn co https://serveradresse/projektname``
+  eclipse projekt mit dem ausgecheckten projektname anlegen
+  am project arbeiten
+
+- ``svn st`` auf demm ordner um den status anzuzeigen
+- ``svn add filepfad`` sachen adden
+- ``svn ignore`` und pycs etc ignoren
+
+::
+    *.pyc
+    /bin
+    /devsrc/
+    /parts/
+    /var/
+    /src/
+    *.egg-info/
+    .mrsd
+    /*eggs/
+    .*.cfg
+    /coverage/
+    /.project
+    /.pydevproject
+    /.settings/
+
+
+- von svn auf lokale maschine speichern:
+  zuerst in workspaceordner gehen und dann
+  ``svn checkout urldesprojekts``

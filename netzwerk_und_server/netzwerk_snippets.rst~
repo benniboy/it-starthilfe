@@ -1,0 +1,36 @@
+ - ``netstat -tulpen`` listet alle netzwerksachen auf
+
+ - in ``/etc/init.d`` sind die ganzen startup dienste die beim booten sind
+
+ - mit ``clear`` kann man das consolenfenster clearen oder mit ``ctrl+l``
+   ``cat .ssh/config`` settings für ssh-sachen
+
+
+ - ``cat .ssh/id_rsa.pub`` meinen public key auslesen,den man immer wieder mal braucht
+
+
+screen befehle auf server und andere nützliche befehle
+======================================================
+
+
+ - immer ``screen -r`` wenn man was am server macht
+   screen -r terminal r = retach = screen auf und vorherige session
+
+ - wenn timeout oder ähnliches auftritt einfach reloggen und
+   wieder ``screnn-r`` dann ist man wieder da wo man aufgehört hat
+
+ - wenn verbindung zusammengebrochen ist, dann ``screen -rd`` d für detach
+
+ - mit strg +a = commandos eventuell help anschauen
+
+    ``strg+a+d`` detach
+    ``strg+a+n`` next
+    ``strg+a+p`` previous
+    ``strg+a+c``create new
+    ``strg+a+a``fast switch
+
+
+ - ``sudo su -``  zum root werden am server
+   alles was ich tun muss, ist meistens im ``/opt`` verzeichnis des servers
+
+
