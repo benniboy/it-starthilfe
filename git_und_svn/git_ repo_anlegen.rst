@@ -45,8 +45,13 @@ dann: ``git init``
   
   
   
-  
-  
+- Create a new repository on the command line
+::
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin git@github.com:benniboy/it-starthilfe.git
+    git push -u origin master
   
 - git origin ändern  
   If you created your repo copy by “clone” operation you will have “origin” remote 

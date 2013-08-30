@@ -6,6 +6,7 @@
 /src/
 *.egg-info/
 .mrsd
+*~
 /eggs/
 /develop-eggs/
 .*.cfg
