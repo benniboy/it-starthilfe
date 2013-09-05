@@ -157,7 +157,14 @@ to finally create the egg run the following
 
   ``python setup.py sdist``
   ``python setup.py sdist register upload``
-  ``python setup.py sdist upload``
 now your egg is ready. An usual method is to put it on version controll now.
 Good options are git or svn.
+
+
+
+
+-update pypi egg
+:: 
+    python setup.py sdist register upload
+Die version in setup py muss stimmen :P    
 

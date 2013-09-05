@@ -73,6 +73,14 @@ dann: ``git init``
   or ````git push origin master``
 
 
+git tagging
+-----------
+miezekatze@bennybunny:~/workspace/collective.customicons$ git tag 1.1
+miezekatze@bennybunny:~/workspace/collective.customicons$ git push --tags
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:collective/collective.customicons.git
+ * [new tag]         1.1 -> 1.1
+miezekatze@bennybunny:~/workspace/collective.customicons$ 
 
 
 
