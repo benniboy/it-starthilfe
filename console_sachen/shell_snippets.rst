@@ -25,6 +25,11 @@ shell snippets
 - ``a`` ist append am ende der zeile
 
 
+prozess suchen =)
+=================
+::
+
+    ps waux |grep "suchname
 
 grep
 ====
