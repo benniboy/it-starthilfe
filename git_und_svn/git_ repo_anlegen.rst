@@ -73,6 +73,21 @@ dann: ``git init``
   or ````git push origin master``
 
 
+
+
+
+
+
+
+password cachen
+git config --global credential.helper 'cache --timeout=3600'
+
+
+
+
+
+
+
 git tagging
 -----------
 miezekatze@bennybunny:~/workspace/collective.customicons$ git tag 1.1
