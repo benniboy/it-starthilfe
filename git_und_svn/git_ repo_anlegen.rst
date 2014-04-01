@@ -2,6 +2,13 @@ via console
 ===========
 
 
+global git config editieren
+---------------------------
+
+vim .git/config
+
+
+
 local in ordner des projektes gehen
 
 dann: ``git init``
@@ -104,3 +111,19 @@ miezekatze@bennybunny:~/workspace/collective.customicons$
  - wenn was von git auf lokale maschine speichern:
    in den workspace gehen und dann:
    ``git clone gitadressevomprojekt`` (am besten ssh adresse)
+
+
+
+
+
+
+
+git branches und so
+-------------------
+
+des hohlt mir alle branches
+git fetch --all
+
+clone specific branch of a project
+git clone -b my-branch git@github.com:plone/Products.CMFPlone.git
+
