@@ -82,4 +82,18 @@ tar machen
   like to archive. Each file you would like included in the archive should
   be seperated by a space.    
     
+
+
+extract tar and install
+=======================
+
+download tar::
+
+extract::
+    tar zxf /pathtofio.tar
+
+cd to extracted then ::
+    ./configure
+    make
+    sudo make install
     
